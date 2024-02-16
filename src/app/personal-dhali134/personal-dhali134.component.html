@@ -1,0 +1,31 @@
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<h3>{{dhali134MyData.FullName}}</h3>
+<h3>Select a button to see more Information about me <span class="material-symbols-outlined">
+        sentiment_satisfied
+    </span></h3>
+<hr>
+<div>
+    <button mat-raised-button color="primary" (click)="dialogBox('sherCred')">
+        <span class="material-symbols-outlined">
+            school
+        </span>
+        My Sheridan Credentials
+        <span class="material-symbols-outlined">
+            school
+        </span>
+    </button><br><br>
+    <button mat-raised-button color="accent" (click)="dialogBox('moreAboutMe')">
+        <span class=" material-symbols-outlined">
+            interactive_space
+        </span>
+        Learn More About Me
+        <span class="material-symbols-outlined">
+            interactive_space
+        </span>
+    </button>
+</div>

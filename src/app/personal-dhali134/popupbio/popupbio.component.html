@@ -1,0 +1,13 @@
+<h3 mat-dialog-title [ngStyle]="{backgroundColor:'#EEA47F'}">
+    {{data.FullName}}
+</h3>
+<div mat-dialog-content>
+    <h4>Home Country: {{data.HomeCountry}}</h4>
+    <h4>Current City: {{data.CurrCity}}</h4>
+    <h4>Favorite Movie: {{data.MovieFav}}</h4>
+    <h4>Favorite Book: {{data.BookFav}}</h4>
+</div>
+
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="ok()">OK</button>
+</div>

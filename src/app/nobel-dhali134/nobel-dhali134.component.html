@@ -1,0 +1,32 @@
+<table mat-table [dataSource]="dhali134Prizes" class="mat-elevation-z8">
+    <ng-container matColumnDef="awardYear">
+        <th mat-header-cell *matHeaderCellDef>Year of Award</th>
+        <td mat-cell *matCellDef="let x">
+            <p>{{ x.year }}</p>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="awardCategory">
+        <th mat-header-cell *matHeaderCellDef>Year of Award</th>
+        <td mat-cell *matCellDef="let x">
+            <p>{{ x.category }}</p>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="laureate">
+        <th mat-header-cell *matHeaderCellDef>Laureate</th>
+        <td mat-cell *matCellDef="let x">
+            <p *ngFor="let y of x.laureates">{{y.firstname}} {{y.surname}}</p>
+        </td>
+    </ng-container>
+
+    <ng-container matColumnDef="motivation">
+        <th mat-header-cell *matHeaderCellDef>Motivation</th>
+        <td mat-cell *matCellDef="let x">
+            <p *ngFor="let y of x.laureates">{{y.motivation}}</p>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
